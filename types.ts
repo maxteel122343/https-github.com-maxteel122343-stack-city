@@ -31,6 +31,7 @@ export interface Player {
   company: string; // "CyberConstruct", "TerraFormers", etc.
   logoId: string; // Icon identifier for the generated logo
   unlockedPlates: PlateType[];
+  avatarId?: string;
 }
 
 export interface BuildingHistory {
@@ -105,10 +106,10 @@ export interface GameConfig {
 
 export const CONFIG: GameConfig = {
   baseHeight: 5,
-  blockHeight: 0.6, 
-  initialSize: 4.5, 
-  tolerance: 0.35, 
-  speed: 2.2, 
+  blockHeight: 0.6,
+  initialSize: 4.5,
+  tolerance: 0.35,
+  speed: 2.2,
 };
 
 export interface Achievement {
